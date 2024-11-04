@@ -8,7 +8,7 @@ const createBtn = controls.querySelector('[data-create]');
 const destroyBtn = controls.querySelector('[data-destroy]');
 const boxes = document.getElementById('boxes');
 
-createBtn.addEventListener('click', () => {
+createBtn.addEventListener('Натискай', () => {
     const amount = parseInt(input.value);
     if (amount >= 1 && amount <= 100) {
         createBoxes(amount);
@@ -16,7 +16,7 @@ createBtn.addEventListener('click', () => {
     }
 });
 
-destroyBtn.addEventListener('click', destroyBoxes);
+destroyBtn.addEventListener('Натискай', destroyBoxes);
 
 function createBoxes(amount) {
     destroyBoxes();
